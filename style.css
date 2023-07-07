@@ -1,0 +1,278 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Noto+Sans:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=DM+Sans:wght@400;500;700&family=Noto+Sans:wght@200;300;400;500&family=Open+Sans:wght@300;400;500;600;700&family=Poppins:wght@100;300;400;500;700&family=Roboto:wght@100;300;400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+    font-family: 'Noto Sans', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
+    /* border: 1px solid red; */
+}
+body{
+    height: 100%;
+}
+.container{
+    width: 100%;
+    height: auto;
+    background-color: yellow;
+}
+
+/* start of navbar */
+nav {
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.inside-nav {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: gr een; */
+}
+
+.inside-nav ul {
+    list-style: none;
+}
+
+.inside-nav ul:last-child {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: green; */
+}
+
+.inside-nav ul li {
+    color: white;
+}
+
+.inside-nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.inside-nav ul:first-child {
+    width: 120px;
+    /* background-color: green; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.inside-nav ul div {
+    width: 50px;
+    height: 25px;
+    border-radius: 5px 20px 20px 5px;
+    background-color: white;
+}
+
+/* end of navbar */
+/* start of product section */
+.product-section{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.inside-product-section{
+    width: 93%;
+    height: 100%;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+    /* background-color: green; */
+}
+.inside-product-section h1{
+    font-size: 189px;
+    font-family: 'Anton', sans-serif;
+    color: #EEE5E0;
+    letter-spacing: 2px;
+}
+/* end of product section */
+/* start of hero section */
+.hero-section{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+}
+.inside-hero-section{
+    width:90%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+.inside-hero-section p{
+    color: white;
+}
+.inside-hero-section button{
+    width: 130px;
+    height: 30px;
+    color: white;
+    background-color: transparent;
+    border: 1px solid white;
+    border-radius: 20px;
+}
+/* end of hero section */
+/* start of image section */
+.image-section{
+    width: 100%;
+    height: 750px;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    background-color: black;
+    /* background-color: yellow; */
+}
+.image{
+    width: 100%;
+    height: 550px;
+    /* background-color: red; */
+    /* border-radius: 0px 250px 250px 0px; */
+    position: relative;
+}
+.bg-image{
+    width: 95%;
+    height: 100%;
+    /* background-color: yellow; */
+}
+.man-image{
+    width: 330px;
+    position: absolute;
+    right: 550px;
+    bottom: 0;
+    /* background-color: yellow; */
+}
+.strategy{
+    width: 180px;
+    position: absolute;
+    bottom: 400px;
+    left: 200px;
+    /* background-color: yellow; */
+}
+.experience{
+    width: 280px;
+    position: absolute;
+    bottom: 260px;
+    right: 1100px;
+    /* background-color: yellow; */
+}
+.interaction{
+    width: 240px;
+    position: absolute;
+    bottom: 60px;
+    right: 1000px;
+    /* background-color: yellow; */
+}
+.user{
+    width: 260px;
+    position: absolute;
+    bottom: 320px;
+    right: 330px;
+    /* background-color: yellow; */
+}
+.branding{
+    width: 260px;
+    position: absolute;
+    bottom: 200px;
+    right: 30px;
+}
+.globe{
+    width: 230px;
+    position: absolute;
+    top: 390px;
+    left: 1000px;
+}
+/* end of image section */
+
+/* Responsive Design */
+@media (max-width:768px) {
+    .inside-nav{
+        width: 80%;
+    }
+    /* product */
+    .product-section{
+        height: 100px;
+    }
+    .inside-product-section{
+        width: 83%;
+    }
+    .product-section h1{
+        font-size: 86px;
+    }
+    /* product */
+    /* hero section */
+    .hero-section{
+        height: 100px;
+        /* background: yellow; */
+    }
+    .inside-hero-section{
+        width: 80%;
+    }
+    .inside-hero-section p{
+        width: 30%;
+        font-size: 12px;
+    }
+    .inside-hero-section p br{
+        display: none;
+    }
+    /* hero section */
+    .image-section{
+        height:400px;
+        /* background-color: aquamarine; */
+    }
+    .image{
+        height: 350px;
+        /* background-color: chartreuse; */
+    }
+    .man-image{     
+        width: 200px;
+        left: 250px;
+    }
+    .strategy{
+        width: 120px;
+        bottom: 250px;
+        left: 80px;
+    }
+    .experience{
+        width: 150px;
+        left: 20px;
+        top:130px;
+    }
+    .interaction{
+        width: 150px;
+        bottom: 30px;
+        left: 70px;
+    }
+    .user{
+        width: 150px;
+        top: 50px;
+        right: 160px;
+    }
+    .branding{
+        width: 130px;
+        top: 130px;
+        right: 20px;
+    }
+    .globe{
+        width: 130px;
+        top: 260px;
+        left: 500px;
+    }
+
+}
